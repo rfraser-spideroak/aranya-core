@@ -128,6 +128,7 @@ impl<T: Typed> Typed for Option<T> {
 #[rkyv(bytecheck(
     bounds(
         __C: rkyv::validation::ArchiveContext,
+        __C::Error: rkyv::rancor::Source,
     )
 ))]
 pub enum Value {
@@ -889,6 +890,7 @@ impl Display for Fact {
 #[rkyv(bytecheck(
     bounds(
         __C: rkyv::validation::ArchiveContext,
+        __C::Error: rkyv::rancor::Source,
     )
 ))]
 pub struct Struct {

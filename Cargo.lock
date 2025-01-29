@@ -221,6 +221,7 @@ version = "0.2.1"
 dependencies = [
  "aranya-crypto",
  "buggy",
+ "bytecheck",
  "byteorder",
  "cfg-if",
  "ciborium",
@@ -341,6 +342,7 @@ dependencies = [
 name = "aranya-policy-ast"
 version = "0.1.0"
 dependencies = [
+ "bytecheck",
  "rkyv",
  "serde",
 ]
@@ -425,6 +427,7 @@ version = "0.3.0"
 dependencies = [
  "aranya-crypto",
  "aranya-policy-ast",
+ "bytecheck",
  "proptest",
  "proptest-derive",
  "rkyv",
