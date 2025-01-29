@@ -21,6 +21,6 @@ std = []
 
 [dependencies]
 serde = { workspace = true, default-features = false, features = ["derive", "alloc"] }
-rkyv = { version = "0.8.10", default-features = false, features = ["alloc"]}
+rkyv = { version = "0.8.10", default-features = false, features = ["alloc", "bytecheck"]}
 [package.metadata.docs.rs]
 all-features = true
